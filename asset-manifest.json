@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/PreEntrega1-CuelloMaximiliano/static/css/main.86f76872.css",
-    "main.js": "/PreEntrega1-CuelloMaximiliano/static/js/main.1db6aaf8.js",
-    "static/js/787.ac919890.chunk.js": "/PreEntrega1-CuelloMaximiliano/static/js/787.ac919890.chunk.js",
-    "static/media/bootstrap-icons.woff?": "/PreEntrega1-CuelloMaximiliano/static/media/bootstrap-icons.4753c5ba57962b4d7bf8.woff",
-    "static/media/bootstrap-icons.woff2?": "/PreEntrega1-CuelloMaximiliano/static/media/bootstrap-icons.6d63d0501e5ed7b79dab.woff2",
-    "index.html": "/PreEntrega1-CuelloMaximiliano/index.html",
-    "main.86f76872.css.map": "/PreEntrega1-CuelloMaximiliano/static/css/main.86f76872.css.map",
-    "main.1db6aaf8.js.map": "/PreEntrega1-CuelloMaximiliano/static/js/main.1db6aaf8.js.map",
-    "787.ac919890.chunk.js.map": "/PreEntrega1-CuelloMaximiliano/static/js/787.ac919890.chunk.js.map"
+    "main.css": "/static/css/main.74e703d2.css",
+    "main.js": "/static/js/main.93c6c7bd.js",
+    "static/js/787.ac919890.chunk.js": "/static/js/787.ac919890.chunk.js",
+    "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.4753c5ba57962b4d7bf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.6d63d0501e5ed7b79dab.woff2",
+    "index.html": "/index.html",
+    "main.74e703d2.css.map": "/static/css/main.74e703d2.css.map",
+    "main.93c6c7bd.js.map": "/static/js/main.93c6c7bd.js.map",
+    "787.ac919890.chunk.js.map": "/static/js/787.ac919890.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.86f76872.css",
-    "static/js/main.1db6aaf8.js"
+    "static/css/main.74e703d2.css",
+    "static/js/main.93c6c7bd.js"
   ]
 }

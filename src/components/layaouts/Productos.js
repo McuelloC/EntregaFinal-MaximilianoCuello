@@ -1,8 +1,12 @@
+import ItemCount from "../ItemCount/ItemView"
 const About = () =>{
     return(
         <div>
-            <h1> About Home</h1>
+            <ItemCount/>
         </div>
+
+
+
     )
 }
 export default About

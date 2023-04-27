@@ -31,4 +31,25 @@ section{
 .bonanav{
   padding-left: 50px;
 }
+.video-background {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video-background video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.Card {
+  margin: 10px;
+}
 

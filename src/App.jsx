@@ -5,7 +5,7 @@ import Contacto from "./components/layaouts/Contacto";
 import About from "./components/layaouts/Productos";
 import Home from "./components/layaouts/Home";
 import NavBar1 from "./components/Navbar/Navbar";
-import ItemListContainer from "./components/ItemListContainer";
+import ItemListContainer from "./components/HomeContainer";
 import bgVideo from "./components/Video/background-video.mp4";
 
 

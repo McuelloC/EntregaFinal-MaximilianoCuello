@@ -1,7 +1,7 @@
 import React from "react";
 import Cards from "./Cards/Cards";
 
-const ItemListContainer = ({ greeting }) => {
+const HomeContainer = ({ greeting }) => {
   return (
     <>
       <div className="position-relative" style={{ marginTop: "20%" }}>
@@ -39,4 +39,4 @@ const ItemListContainer = ({ greeting }) => {
   );
 };
 
-export default ItemListContainer;
+export default HomeContainer;

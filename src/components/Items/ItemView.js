@@ -1,7 +1,6 @@
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import ListGroup from 'react-bootstrap/ListGroup';
-import burguer from "../Imagenes/hamburguesa.jpg"
 import ItemCount from './ItemCount';
 const ItemView =()=>{
     
@@ -15,7 +14,7 @@ const ItemView =()=>{
              textDecoration: "none",
              backgroundColor:"rgba(255, 255, 255, 0.2)",
           }}>
-          <Card.Img variant="top" src={burguer} />
+          <Card.Img variant="top" src="https://firebasestorage.googleapis.com/v0/b/react-coderhouse-84503.appspot.com/o/ImageProduct%2Fhamburguesa.jpg?alt=media&token=ff544e57-e17b-4499-8b55-a39a9447b2cf" />
           <Card.Body>
             <Card.Title s>Hamburguesa con Papas</Card.Title>
         

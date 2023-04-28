@@ -1,4 +1,4 @@
-import ItemCount from "../ItemCount/ItemView"
+import ItemCount from "../Items/ItemView"
 const About = () =>{
     return(
         <div>

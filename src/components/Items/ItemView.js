@@ -2,10 +2,12 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import ListGroup from 'react-bootstrap/ListGroup';
 import ItemCount from './ItemCount';
+import Mock from "./Mock.json";
 const ItemView =()=>{
-    
+    console.log(Mock.map);
     return (
         <>
+        
         <Card style={{
              width: '15rem',
              height: '10 rem',
@@ -29,8 +31,9 @@ const ItemView =()=>{
             
           </Card.Body>
         </Card>
-
+        
     </>
+      
      );
 }
 export default ItemView;

@@ -1,7 +1,7 @@
 [
     {
-        "id": "1",
-        "tittle": "Hamburguesa con Cheddar",
+        "id": 1,
+        "title": "Hamburguesa con Cheddar",
         "description": "Dos carnes con Cheddar y Pacenta, incluye papas fritas",
         "price": 1800,
         "pictureURL":"https://firebasestorage.googleapis.com/v0/b/react-coderhouse-84503.appspot.com/o/ImageProduct%2Fhamburguesa.jpg?alt=media&token=ff544e57-e17b-4499-8b55-a39a9447b2cf",
@@ -9,8 +9,8 @@
 
     },
     {
-        "id": "2",
-        "tittle": "Bife de Chorizo",
+        "id": 2,
+        "title": "Bife de Chorizo",
         "description": "Bife de chorizo con Guarnicion",
         "price": 2200,
         "pictureURL":"https://firebasestorage.googleapis.com/v0/b/react-coderhouse-84503.appspot.com/o/ImageProduct%2FBifeChorizo.jpg?alt=media&token=0c137422-7180-41fd-8005-49eec206fcca",
@@ -18,8 +18,8 @@
 
     },
     {
-        "id": "3",
-        "tittle": "Pechuga Grille",
+        "id": 3,
+        "title": "Pechuga Grille",
         "description": "Pechuga de Pollo Grille con Guarnicion",
         "price": 3300,
         "pictureURL":"https://firebasestorage.googleapis.com/v0/b/react-coderhouse-84503.appspot.com/o/ImageProduct%2FPechuga.jpg?alt=media&token=dd23215f-a7e0-41a1-b7c1-cf04f214a350",
@@ -27,8 +27,8 @@
 
     },
     {
-        "id": "4",
-        "tittle": "Pizza Calabresa",
+        "id": 4,
+        "title": "Pizza Calabresa",
         "description": "Pizza Grande con Rodajas de Longaniza",
         "price": 1500,
         "pictureURL":"https://firebasestorage.googleapis.com/v0/b/react-coderhouse-84503.appspot.com/o/ImageProduct%2FCalabresa.jpg?alt=media&token=956bb3d1-9c84-4e2c-9f92-25b2e95835b4",
@@ -36,8 +36,8 @@
 
     },
     {
-        "id": "5",
-        "tittle": "Pizza Capresse",
+        "id": 5,
+        "title": "Pizza Capresse",
         "description": "Pizza Grande con Rucula y Tomates Cherri",
         "price": 1700,
         "pictureURL":"https://firebasestorage.googleapis.com/v0/b/react-coderhouse-84503.appspot.com/o/ImageProduct%2FCapresse.jpg?alt=media&token=edcbb5b0-0d39-4363-8933-135f1ba1dd6f",
@@ -45,8 +45,8 @@
 
     },
     {
-        "id": "6",
-        "tittle": "Pizza con Huevo",
+        "id": 6,
+        "title": "Pizza con Huevo",
         "description": "Pizza Grande con Tomate y Huevo",
         "price": 1600,
         "pictureURL":"https://firebasestorage.googleapis.com/v0/b/react-coderhouse-84503.appspot.com/o/ImageProduct%2FHuevo.jpg?alt=media&token=fec7794d-ff07-4ed8-8388-eae3bd9ba4b9",
@@ -54,8 +54,8 @@
 
     },
     {
-        "id": "7",
-        "tittle": "Pizza con Mozzarella",
+        "id": 7,
+        "title": "Pizza con Mozzarella",
         "description": "Pizza Grande solo con Mozzarela y oregano",
         "price": 1300,
         "pictureURL":"https://firebasestorage.googleapis.com/v0/b/react-coderhouse-84503.appspot.com/o/ImageProduct%2FMozzarella.jpg?alt=media&token=e55c3b94-4a59-4cd4-a4e7-a1897ed00c80",
@@ -63,8 +63,8 @@
 
     },
     {
-        "id": "8",
-        "tittle": "Fideos con Bolognesa",
+        "id": 8,
+        "title": "Fideos con Bolognesa",
         "description": "Fideos tallarines con abundante Salsa Bolognesa",
         "price": 1600,
         "pictureURL":"https://firebasestorage.googleapis.com/v0/b/react-coderhouse-84503.appspot.com/o/ImageProduct%2FFideosBolognesa.jpg?alt=media&token=45bb3e1e-d338-4381-becf-daaf8dd76f35",
@@ -72,8 +72,8 @@
 
     },
     {
-        "id": "9",
-        "tittle": "Fideos con Mixta",
+        "id": 9,
+        "title": "Fideos con Mixta",
         "description": "Fideos Tallarines con Salsa Mixta",
         "price": 1400,
         "pictureURL":"https://firebasestorage.googleapis.com/v0/b/react-coderhouse-84503.appspot.com/o/ImageProduct%2FFideosMixta.jpg?alt=media&token=267978ad-ea57-4fd2-a05b-98f5ee96c7ca",
@@ -81,8 +81,8 @@
 
     },
     {
-        "id": "10",
-        "tittle": "Fideos al Verdeo",
+        "id": 10,
+        "title": "Fideos al Verdeo",
         "description": "Fideos Tallarines con Crema y Verdeo",
         "price": 1400,
         "pictureURL":"",

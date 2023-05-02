@@ -1,17 +1,14 @@
 import ItemCount from "../Items/ItemView"
 import Item from "../Items/Item"
+import ItemView from "../Items/ItemView"
 const About = () =>{
     return(
         <>
-        <div>
-            <ItemCount/>
-        </div>
-        <div>
+        
+        <div className="d-flex  align-items-center">
         <Item/>
         </div>
-        <div>
-         
-        </div>
+        
 
         </>
 

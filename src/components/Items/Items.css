@@ -1,0 +1,30 @@
+
+
+.CardProduct{
+    width: 15rem;
+    height: 10 rem;
+    text-shadow: none;
+    text-align:  center;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.AccordionDescription{
+
+    font-size: 20px;
+}
+.AccordionBody{
+    background-color:rgba(255, 255, 255, 0.1);
+    border-color: transparent;
+
+}
+.accordion-button{
+  background-color:  rgba(255, 255, 255, 0.1);
+}
+.accordion-button.hover{
+    background-color:  rgba(255, 255, 255, 0.1);
+  }
+
+
+
+
+

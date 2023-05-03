@@ -24,6 +24,10 @@
     background-color:  rgba(255, 255, 255, 0.1);
   }
 
+.btndisable[disabled]{
+    background-color: rgb(126, 45, 45)
+}
+
 
 
 

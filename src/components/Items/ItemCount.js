@@ -1,5 +1,6 @@
 import { Button } from "react-bootstrap";
 import { useState } from "react";
+ import "./Items.css";
 
 function ItemCount({ stock }) {
  
@@ -21,7 +22,7 @@ function ItemCount({ stock }) {
       <div className="col-12">
         <Button onClick={restar}>-</Button>
         <span>{count}</span>
-        <Button onClick={sumar} disabled={count === stock}>+</Button>
+        <Button onClick={sumar} className="btndisable" disabled={count === stock}>+</Button>
       </div>
     );
 }

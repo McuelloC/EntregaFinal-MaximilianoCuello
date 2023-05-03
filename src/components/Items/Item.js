@@ -27,6 +27,7 @@ function Item() {
 
   return (
     <>
+    
       {data && data.map(item => (
         <ItemView 
           img={item.pictureURL} 
@@ -36,7 +37,9 @@ function Item() {
           stock={item.Stock}
           price={item.price}
         />
+       
       ))}
+       
     </>
   );
 }

@@ -5,6 +5,7 @@ import ItemCount from './ItemCount';
 import DescriptionProduct from './DescriptionProduct';
 
 const ItemView = ({ img, title, description, id, stock, price }) => {
+ 
   return (
     <>
       <Card className='CardProduct'>
@@ -18,7 +19,7 @@ const ItemView = ({ img, title, description, id, stock, price }) => {
         <Card.Body>
         <ItemCount stock={stock} />
           <br/>
-          <Button variant="primary">Agregar al Carrito</Button>
+          <Button variant="primary" >Agregar al Carrito</Button>
         </Card.Body>
       </Card>
     </>

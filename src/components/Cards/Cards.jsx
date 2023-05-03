@@ -48,7 +48,7 @@ const Cards = () => {
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-          <Button variant="primary">Go somewhere</Button>
+          <Button variant="primary" src="/Contact">Go somewhere</Button>
         </Card.Footer>
       </Card>
     </CardGroup>

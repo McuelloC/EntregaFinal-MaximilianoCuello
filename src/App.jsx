@@ -8,13 +8,14 @@ import NavBar1 from "./components/Navbar/Navbar";
 import ItemListContainer from "./components/HomeContainer";
 import bgVideo from "./components/Video/background-video.mp4";
 import { DataProvider } from "./DataContext/DataProvider";
-
+import { CountProvider } from "./DataContext/CountProvider";
 
 function App() {
   return (
    
     <>
      <DataProvider>
+      <CountProvider>
     <div className="video-background">
     <video autoPlay muted loop>
       <source src={bgVideo} type="video/mp4" />
@@ -38,6 +39,7 @@ function App() {
     
   
     </div>
+    </CountProvider> 
     </DataProvider>
     </>
   );

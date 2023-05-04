@@ -30,7 +30,7 @@ export  const DataProvider = ({ children }) => {
   }, []);
 
   return (
-    // Pasamos el valor del estado del contexto con el objeto data
+    
     <DataContext.Provider value={{ data }}>
       {children}
     </DataContext.Provider>

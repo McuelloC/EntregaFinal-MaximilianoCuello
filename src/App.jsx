@@ -7,17 +7,21 @@ import Home from "./components/layaouts/Home";
 import NavBar1 from "./components/Navbar/Navbar";
 import ItemListContainer from "./components/HomeContainer";
 import bgVideo from "./components/Video/background-video.mp4";
+import { DataProvider } from "./DataContext/DataProvider";
 
 
 function App() {
   return (
+   
     <>
+     <DataProvider>
     <div className="video-background">
     <video autoPlay muted loop>
       <source src={bgVideo} type="video/mp4" />
       </video>
       </div>
     <div >
+      
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<NavBar1 />}>
@@ -31,11 +35,13 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
-
+    
   
     </div>
+    </DataProvider>
     </>
   );
+  
 }
 
 export default App;

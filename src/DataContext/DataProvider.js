@@ -1,9 +1,13 @@
-import { useState, useEffect } from "react";
-import ItemView from "./ItemView";
+import { DataContext } from './DataContext';
 
-function Item() {
-  const [data, setData] = useState(null);
- 
+import React, { useState, useEffect} from 'react';
+
+
+
+
+export  const DataProvider = ({ children }) => {
+  const [data, setData] = useState([]);
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -26,22 +30,9 @@ function Item() {
   }, []);
 
   return (
-    <>
-    
-      {data && data.map(item => (
-        <ItemView 
-          img={item.pictureURL} 
-          title={item.title} 
-          description={item.description} 
-          id={item.id} 
-          stock={item.Stock}
-          price={item.price}
-        />
-       
-      ))}
-       
-    </>
+    // Pasamos el valor del estado del contexto con el objeto data
+    <DataContext.Provider value={{ data }}>
+      {children}
+    </DataContext.Provider>
   );
-}
-
-export default Item;
+};

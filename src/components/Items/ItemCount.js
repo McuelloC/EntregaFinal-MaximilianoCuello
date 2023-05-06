@@ -1,30 +1,23 @@
 import { Button } from "react-bootstrap";
-import { useState } from "react";
- import "./Items.css";
+import { useCount } from "../../hooks/useCounter";
+import "./Items.css";
 
 function ItemCount({ stock }) {
- 
-    const [count, setCount] = useState(1);
- 
-    const sumar = () => {
-      if (count < stock) {
-        setCount(count + 1);
-      }
-    };
-  
-    const restar = () => {
-      if (count > 1) {
-        setCount(count - 1);
-      }
-    };
-  
-    return (
-      <div className="col-12">
-        <Button onClick={restar}>-</Button>
-        <span>{count}</span>
-        <Button onClick={sumar} className="btndisable" disabled={count === stock}>+</Button>
-      </div>
-    );
+  const Cont = useCount();
+
+  return (
+    <div className="col-12">
+      <Button onClick={() => Cont.restar()}>-</Button>
+      <span>{Cont.count}</span>
+      <Button
+        onClick={() => Cont.sumar(stock)}
+        className="btndisable"
+        disabled={Cont.count === stock}
+      >
+        +
+      </Button>
+    </div>
+  );
 }
 
 export default ItemCount;

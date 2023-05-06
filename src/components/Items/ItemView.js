@@ -4,7 +4,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import ItemCount from './ItemCount';
 import DescriptionProduct from './DescriptionProduct';
 import React, { useContext } from "react";
-import { DataContext } from "../../DataContext/DataContext";
+import { DataContext } from "../../hooks/DataContext";
 
 const ItemView = () => {
   const { data } = useContext(DataContext);

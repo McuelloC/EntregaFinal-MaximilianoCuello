@@ -1,14 +1,13 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Contacto from "./components/layaouts/Contacto";
-import About from "./components/layaouts/Productos";
-import Home from "./components/layaouts/Home";
 import NavBar1 from "./components/Navbar/Navbar";
-import ItemListContainer from "./components/HomeContainer";
 import bgVideo from "./components/Video/background-video.mp4";
-import { DataProvider } from "./DataContext/DataProvider";
-import { CountProvider } from "./DataContext/CountProvider";
+import { DataProvider } from "./hooks/DataProvider";
+import { CountProvider } from "./hooks/CountProvider";
+import { Contacto, Home, Productos } from "./pages";
+
+
 
 function App() {
   return (
@@ -26,11 +25,11 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<NavBar1 />}>
-            <Route path="about" element={<About />} />
+            <Route path="Productos" element={<Productos />} />
             <Route path="contact" element={<Contacto />} />
             <Route
               path="/"
-              element={<ItemListContainer greeting="¡Bienvenidos a Bona Comida!" />}
+              element={<Home greeting="¡Bienvenidos a Bona Comida!" />}
             />
             <Route element={<Home />} />
           </Route>

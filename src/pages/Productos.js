@@ -1,8 +1,8 @@
 
 
-import ItemView from "../Items/ItemView"
+import ItemView from "../components/Items/ItemView"
 
-const About = () =>{
+const Productos = () =>{
     return(
         <>
         
@@ -15,4 +15,4 @@ const About = () =>{
 
     )
 }
-export default About
+export  {Productos}

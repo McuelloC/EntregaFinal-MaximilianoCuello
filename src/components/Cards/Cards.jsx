@@ -1,9 +1,9 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
-import delivery from "../Imagenes/delivery.jpg"
-import catering from "../Imagenes/catering.jpg"
-import viandas from "../Imagenes/viandas.jpg";
+import delivery from "../../assets/Imagenes/delivery.jpg"
+import catering from "../../assets/Imagenes/catering.jpg"
+import viandas from "../../assets/Imagenes/viandas.jpg";
 
 const Cards = () => {
     const cardStyle = {

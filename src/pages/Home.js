@@ -1,7 +1,8 @@
 import React from "react";
-import Cards from "./Cards/Cards";
+import Cards from "../components/Cards/Cards"
 
-const HomeContainer = ({ greeting }) => {
+
+const Home = ({ greeting }) => {
   return (
     <>
       <div className="position-relative" style={{ marginTop: "20%" }}>
@@ -39,4 +40,4 @@ const HomeContainer = ({ greeting }) => {
   );
 };
 
-export default HomeContainer;
+export  {Home};

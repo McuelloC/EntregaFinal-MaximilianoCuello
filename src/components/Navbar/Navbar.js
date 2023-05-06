@@ -1,10 +1,10 @@
 import React from 'react';
 import { Navbar,  Nav} from 'react-bootstrap';
-import CarritoCompras from './CartWidget/CarritoCompras';
+import CarritoCompras from '../CartWidget/CarritoCompras';
 import { Link, Outlet } from 'react-router-dom';
 
 
-function NavBar1() {
+function NavBar() {
   return (
     <>
       <Navbar className="navBg" variant='dark' expand="lg" >
@@ -28,4 +28,4 @@ function NavBar1() {
   );
 }
 
-export default NavBar1;
+export default NavBar;

@@ -19,9 +19,10 @@ const ItemView = () => {
             <Card.Title>{item.title}</Card.Title>
           </Card.Body>
           <ListGroup className="list-group-flush" >
-            <DescriptionProduct description={item.description} />
+           <DescriptionProduct description={item.description} />
           </ListGroup>
           <Card.Body>
+           <Card.Text> Precio: ${item.price}</Card.Text>
             <ItemCount stock={item.Stock} />
             <br/>
             <Button variant="primary" >Agregar al Carrito</Button>

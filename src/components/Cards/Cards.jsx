@@ -4,14 +4,17 @@ import CardGroup from 'react-bootstrap/CardGroup';
 import delivery from "../../assets/Imagenes/delivery.jpg"
 import catering from "../../assets/Imagenes/catering.jpg"
 import viandas from "../../assets/Imagenes/viandas.jpg";
+import { NavLink } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+
 
 const Cards = () => {
-    const cardStyle = {
-        margin: "30px",
-        backgroundColor: "rgba(255, 255, 255, 0.2)", // Fondo más transparente
-        textAlign: "center",
-        textShadow: "none" // Sacar la sombra a las letras
-      };
+  const cardStyle = {
+    margin: "30px",
+    backgroundColor: "rgba(255, 255, 255, 0.2)", // Fondo más transparente
+    textAlign: "center",
+    textShadow: "none" // Sacar la sombra a las letras
+  };
 
   return (
     <CardGroup>
@@ -24,7 +27,9 @@ const Cards = () => {
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-          <Button variant="primary">Go somewhere</Button>
+          <NavLink as={Link} to="/Productos">
+            <Button variant="primary">Market</Button>
+          </NavLink>
         </Card.Footer>
       </Card>
       <Card style={cardStyle}>
@@ -36,7 +41,9 @@ const Cards = () => {
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-          <Button variant="primary">Go somewhere</Button>
+          <NavLink as={Link} to="/Productos">
+            <Button variant="primary">Market</Button>
+          </NavLink>
         </Card.Footer>
       </Card>
       <Card style={cardStyle}>
@@ -48,7 +55,9 @@ const Cards = () => {
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-          <Button variant="primary" src="/Contact">Go somewhere</Button>
+          <NavLink as={Link} to="/Productos">
+            <Button variant="primary">Market</Button>
+          </NavLink>
         </Card.Footer>
       </Card>
     </CardGroup>

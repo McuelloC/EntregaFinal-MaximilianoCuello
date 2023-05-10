@@ -2,23 +2,36 @@
 
 import { Dropdown, DropdownButton } from "react-bootstrap"
 import ItemView from "../components/Items/ItemView"
+import { useState } from "react"
 
 
 const Productos = () => {
-   
+    const [filter, setFilter] = useState("Todo")
+
+    const handleSelect = (value) => {
+        setFilter(value)
+     
+    }
     return (
         <>
             <div className="container">
-            <DropdownButton id="dropdown-basic-button" title="Categorias">
-                <Dropdown.Item href="#/action-1" className="List">Todo</Dropdown.Item>
-                
-                <Dropdown.Item href="#/action-2" className="List">Carnes</Dropdown.Item>
-                <Dropdown.Item href="#/action-3" className="List">Pastas</Dropdown.Item>
-                <Dropdown.Item href="#/action-3" className="List">Pizzas</Dropdown.Item>
-            </DropdownButton>
+                <DropdownButton id="dropdown-basic-button" title="Categorias">
+                    <Dropdown.Item onClick={() => handleSelect("Todo")} className="List" href="#/Todo">
+                        Todo
+                    </Dropdown.Item>
+                    <Dropdown.Item onClick={() => handleSelect("Carne")} className="List" href="#/Carne">
+                        Carnes
+                    </Dropdown.Item>
+                    <Dropdown.Item onClick={() => handleSelect("Pastas")} className="List" href="#/Pastas">
+                        Pastas
+                    </Dropdown.Item>
+                    <Dropdown.Item onClick={() => handleSelect("Pizza")} className="List" href="#/Pizzas">
+                        Pizzas
+                    </Dropdown.Item>
+                </DropdownButton>
             </div>
             <div className="row ">
-                <ItemView />
+                <ItemView filter={filter}/>
             </div>
 
 

@@ -2,27 +2,31 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import ListGroup from 'react-bootstrap/ListGroup';
 import ItemCount from './ItemCount';
-
 import DescriptionProduct from './DescriptionProduct';
 import React, { useContext } from "react";
 import { DataContext } from "../../Context/DataContext";
 
-const ItemView = () => {
+const ItemView = ({ filter }) => {
   const { data } = useContext(DataContext);
-  
+  let filterData = data;
+
+  if (filter !== 'Todo') {
+    filterData = data.filter(item => item.keyFilter.includes(filter));
+  }
+
   return (
     <>
-      {data.map(item => (
+      {filterData.map(item => (
         <Card key={item.id} className='CardProduct'>
           <Card.Img variant="top" src={item.pictureURL} />
           <Card.Body>
             <Card.Title>{item.title}</Card.Title>
           </Card.Body>
           <ListGroup className="list-group-flush" >
-           <DescriptionProduct description={item.description} />
+            <DescriptionProduct description={item.description} />
           </ListGroup>
           <Card.Body>
-           <Card.Text> Precio: ${item.price}</Card.Text>
+            <Card.Text> Precio: ${item.price}</Card.Text>
             <ItemCount stock={item.Stock} />
             <br/>
             <Button variant="primary" >Agregar al Carrito</Button>
@@ -32,5 +36,6 @@ const ItemView = () => {
     </>
   );
 };
+
 
 export default ItemView;

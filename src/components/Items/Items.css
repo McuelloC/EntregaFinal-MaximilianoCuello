@@ -45,6 +45,14 @@
     justify-content: center;
   }
 
+  .Modal-footer {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  
+
 
 
 

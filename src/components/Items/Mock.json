@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "Burger Completa",
-        "description": "Dos carnes con Cheddar y Pacenta, incluye papas fritas",
+        "description": "Hamburguesa doble de 125G Cada una, a la parilla   con queso Cheddar y panceta, acompañada de papas fritas.",
         "price": 1800,
         "pictureURL":"https://firebasestorage.googleapis.com/v0/b/react-coderhouse-84503.appspot.com/o/ImageProduct%2Fhamburguesa.jpg?alt=media&token=ff544e57-e17b-4499-8b55-a39a9447b2cf",
         "Stock": 20,
@@ -13,7 +13,7 @@
     {
         "id": 2,
         "title": "Bife de Chorizo",
-        "description": "Bife de chorizo con Guarnicion",
+        "description": "Bife de chorizo entero a la parilla, con guarnicio a eleccion (Papas Fritas,Pure,Ensalada Mixta)",
         "price": 2200,
         "pictureURL":"https://firebasestorage.googleapis.com/v0/b/react-coderhouse-84503.appspot.com/o/ImageProduct%2FBifeChorizo.jpg?alt=media&token=f9384f0d-9b12-4bd9-8a61-0cb91e9450f7",
         "Stock": 10,
@@ -22,8 +22,8 @@
     },
     {
         "id": 3,
-        "title": "Pechuga Grille",
-        "description": "Pechuga de Pollo Grille con Guarnicion",
+        "title": "Pechuga Grille ",
+        "description": "Pechuga Grille a la plancha, con guarnicio a eleccion (Papas Fritas,Pure,Ensalada Mixta)",
         "price": 3300,
         "pictureURL":"https://firebasestorage.googleapis.com/v0/b/react-coderhouse-84503.appspot.com/o/ImageProduct%2FPechuga.jpg?alt=media&token=c72e9649-cc76-451e-bc2e-8022db535714",
         "Stock": 15,
@@ -33,7 +33,7 @@
     {
         "id": 4,
         "title": "Pizza Calabresa",
-        "description": "Pizza Grande con Rodajas de Longaniza",
+        "description": "Pizza Grande o individual con rodajas de longaniza y abundante muzzarella",
         "price": 1500,
         "pictureURL":"https://firebasestorage.googleapis.com/v0/b/react-coderhouse-84503.appspot.com/o/ImageProduct%2FCalabresa.jpg?alt=media&token=171512b5-f5cb-4d73-8400-8e461e38ba57",
         "Stock": 5,
@@ -43,7 +43,7 @@
     {
         "id": 5,
         "title": "Pizza Capresse",
-        "description": "Pizza Grande con Rucula y Tomates Cherri",
+        "description": "Pizza Grande o individual con Muzzarella , Rucula y Tomates Cherris",
         "price": 1700,
         "pictureURL":"https://firebasestorage.googleapis.com/v0/b/react-coderhouse-84503.appspot.com/o/ImageProduct%2FCapresse.jpg?alt=media&token=f1c6b6d2-e5b5-433d-a5d3-8a65ef9e194c",
         "Stock": 7,
@@ -53,7 +53,7 @@
     {
         "id": 6,
         "title": "Pizza con Huevo",
-        "description": "Pizza Grande con Tomate y Huevo",
+        "description": "Pizza Grande o individual con Muzzarella y Huevo",
         "price": 1600,
         "pictureURL":"https://firebasestorage.googleapis.com/v0/b/react-coderhouse-84503.appspot.com/o/ImageProduct%2FHuevo.jpg?alt=media&token=4f9cd3d7-c995-415a-b80e-90295e3516d8",
         "Stock": 6,
@@ -63,7 +63,7 @@
     {
         "id": 7,
         "title": "Gde con Muzza",
-        "description": "Pizza Grande solo con Mozzarela y oregano",
+        "description": "Pizza Grande o individual con abundante Muzzarella y Aceitunas",
         "price": 1300,
         "pictureURL":"https://firebasestorage.googleapis.com/v0/b/react-coderhouse-84503.appspot.com/o/ImageProduct%2FMozzarella.jpg?alt=media&token=eb87357c-fd83-4ba1-a0be-1a718aae2ba0",
         "Stock": 20,
@@ -73,7 +73,7 @@
     {
         "id": 8,
         "title": "Fideos con Bolo",
-        "description": "Fideos tallarines con abundante Salsa Bolognesa",
+        "description": "Fideos Tallarines/Fusilli/Spaghetti caseros  con abundante Salsa Bolognesa, Queso de rayar y pan",
         "price": 1600,
         "pictureURL":"https://firebasestorage.googleapis.com/v0/b/react-coderhouse-84503.appspot.com/o/ImageProduct%2FFideosBolognesa.jpg?alt=media&token=d6f626f8-abc4-42b9-9e1b-a2c7e337c50d",
         "Stock": 8,
@@ -83,7 +83,7 @@
     {
         "id": 9,
         "title": "Fideos con Mixta",
-        "description": "Fideos Tallarines con Salsa Mixta",
+        "description": "Fideos Tallarines/Fusilli/Spaghetti caseros con Salsa Mixta, Queso de rayar y pan",
         "price": 1400,
         "pictureURL":"https://firebasestorage.googleapis.com/v0/b/react-coderhouse-84503.appspot.com/o/ImageProduct%2FFideosMixta.jpg?alt=media&token=ff3fcee0-001a-4796-b6cf-157412e87f3b",
         "Stock": 8,
@@ -93,7 +93,7 @@
     {
         "id": 10,
         "title": "Fideos al Verdeo",
-        "description": "Fideos Tallarines con Crema y Verdeo",
+        "description": "Fideos Tallarines/Fusilli/Spaghetti  caseros con Crema y Verdeo, Queso de rayar y pan",
         "price": 1400,
         "pictureURL":"https://firebasestorage.googleapis.com/v0/b/react-coderhouse-84503.appspot.com/o/ImageProduct%2FFideosVerdeo.jpg?alt=media&token=e03fa30c-6fb6-406c-a3e5-d38e61bc5368",
         "Stock": 8,

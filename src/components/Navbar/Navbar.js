@@ -14,8 +14,9 @@ function NavBar() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-6">
               <Nav.Link as={Link} to="/">Home</Nav.Link>
-              <Nav.Link as={Link} to="/Productos">Productos</Nav.Link>
+              <Nav.Link as={Link} to="/productos">Productos</Nav.Link>
               <Nav.Link as={Link} to="/Contact">Contacto</Nav.Link>
+              
             </Nav>
             <CarritoCompras/>
           </Navbar.Collapse>

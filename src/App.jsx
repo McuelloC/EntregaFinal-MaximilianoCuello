@@ -5,6 +5,8 @@ import NavBar from "./components/Navbar/Navbar";
 import bgVideo from "./assets/Video/background-video.mp4";
 import { DataProvider } from "./Context/DataProvider";
 import { Contacto, Home, Productos } from "./pages";
+import ProductDetail from "./pages/ProductDetail";
+import IdProvider from "./Context/IdProvider";
 
 
 
@@ -20,19 +22,20 @@ function App() {
             </video>
           </div>
           <div >
-
+           <IdProvider>
             <BrowserRouter>
               <Routes>
                 <Route path="/" element={<NavBar />}>
-                  <Route path="Productos" element={<Productos />} />
+                  <Route path="productos" element={<Productos />} />
                   <Route path="contact" element={<Contacto />} />
+                  <Route path="productos/:id" element={<ProductDetail />} />
                   <Route path="/" element={<Home greeting="¡Bienvenidos a Bona Comida!" />} />
                   <Route element={<Home />} />
                 </Route>
               </Routes>
             </BrowserRouter>
 
-
+            </IdProvider>
           </div>
         
       </DataProvider>

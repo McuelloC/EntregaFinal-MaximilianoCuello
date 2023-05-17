@@ -1,16 +1,17 @@
-import React, { useContext } from 'react';
-import { IdContext } from '../Context/IdContext';
+import React, { useContext, useEffect, useState } from 'react';
 import { Card, Button } from 'react-bootstrap';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink, Link, useParams } from 'react-router-dom';
 import { DataContext } from '../Context/DataContext';
 
-function ProductDetail(props) {
+function ProductDetail() {
+  const { id } = useParams();
   const { data } = useContext(DataContext);
-  const { selectedItemId } = useContext(IdContext);
+  const [filterData, setFilterData] = useState(null);
 
-  const id = props.id || selectedItemId;
-
-  const filterData = data.find(item => item.id === id);
+  useEffect(() => {
+    const filteredItem = data.find(item => item.id === parseInt(id));
+    setFilterData(filteredItem);
+  }, [data, id]);
 
   const containerStyle = {
     display: 'flex',
@@ -33,23 +34,44 @@ function ProductDetail(props) {
     objectFit: 'cover',
   };
 
-  return (
-    <div style={containerStyle}>
-      <Card style={cardStyle}>
-        <Card.Img variant="top" src={filterData.pictureURL} style={imageStyle} />
+  if (!filterData) {
+    return (
+      <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        border: '1px solid black',
+        padding: '20px',
+      }}>
 
-        <Card.Body>
-          <Card.Title>{filterData.title}</Card.Title>
-          <Card.Text>{filterData.description}</Card.Text>
-          <span> Precio: ${filterData.price}</span>
-        </Card.Body>
-        <Card.Footer>
-          <NavLink as={Link} to="/productos">
-            <Button variant="primary">Volver a Productos</Button>
-          </NavLink>
-        </Card.Footer>
-      </Card>
-    </div>
+        <h1>El ID Indicado es incorrecto</h1>
+        <NavLink as={Link} to="/productos">
+          <Button variant="primary">Volver a Productos</Button>
+        </NavLink>
+      </div>
+    );
+  }
+
+  return (
+    <>
+      <div style={containerStyle}>
+        <Card style={cardStyle}>
+          <Card.Img variant="top" src={filterData.pictureURL} style={imageStyle} />
+
+          <Card.Body>
+            <Card.Title>{filterData.title}</Card.Title>
+            <Card.Text>{filterData.description}</Card.Text>
+            <span> Precio: ${filterData.price}</span>
+          </Card.Body>
+          <Card.Footer>
+            <NavLink as={Link} to="/productos">
+              <Button variant="primary">Volver a Productos</Button>
+            </NavLink>
+          </Card.Footer>
+        </Card>
+      </div>
+    </>
   );
 }
 

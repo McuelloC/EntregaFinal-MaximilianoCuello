@@ -1,14 +1,9 @@
 import { Dropdown, DropdownButton } from "react-bootstrap";
 import ItemView from "../components/Items/ItemView";
 import { useState } from "react";
-import { useParams } from "react-router-dom";
-import ProductDetail from "./ProductDetail";
 
 const Productos = () => {
   const [filter, setFilter] = useState("Todo");
-  const { id } = useParams();
-  console.log(id)
-
   const handleSelect = (value) => {
     setFilter(value);
   };
@@ -50,7 +45,7 @@ const Productos = () => {
       <div className="row">
         <ItemView filter={filter} />
       </div>
-      {id && <ProductDetail id={id} />} 
+     
     </>
   );
 };

@@ -28,7 +28,7 @@ function App() {
                 <Route path="/" element={<NavBar />}>
                   <Route path="productos" element={<Productos />} />
                   <Route path="contact" element={<Contacto />} />
-                  <Route path="productos/:id" element={<ProductDetail />} />
+                  <Route path="/productos/:id" element={<ProductDetail />} />
                   <Route path="/" element={<Home greeting="¡Bienvenidos a Bona Comida!" />} />
                   <Route element={<Home />} />
                 </Route>

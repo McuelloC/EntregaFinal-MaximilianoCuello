@@ -40,6 +40,20 @@ const Productos = () => {
           >
             Pizzas
           </Dropdown.Item>
+          <Dropdown.Item
+            onClick={() => handleSelect("Viandas")}
+            className="List"
+            href="#/Pizzas"
+          >
+            Viandas
+          </Dropdown.Item>
+          <Dropdown.Item
+            onClick={() => handleSelect("Catering")}
+            className="List"
+            href="#/Pizzas"
+          >
+            Catering
+          </Dropdown.Item>
         </DropdownButton>
       </div>
       <div className="row">

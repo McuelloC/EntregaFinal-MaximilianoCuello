@@ -35,6 +35,7 @@ const Home = ({ greeting }) => {
       </div>
       <div className="col-10 mx-auto" style={{ marginTop: "20%px" }}>
         <Cards />
+        
       </div>
     </>
   );

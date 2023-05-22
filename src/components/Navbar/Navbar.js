@@ -18,7 +18,7 @@ function NavBar() {
               <Nav.Link as={Link} to="/Contact">Contacto</Nav.Link>
               
             </Nav>
-            <CarritoCompras/>
+            <CarritoCompras />
           </Navbar.Collapse>
        
       </Navbar>

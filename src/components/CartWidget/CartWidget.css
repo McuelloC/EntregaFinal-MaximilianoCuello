@@ -1,0 +1,26 @@
+.carrito-compras{
+    padding-right: 120px;
+    background-color: transparent
+    
+  }
+.Cart-Button{
+    display: inline-block;
+    border-radius: 50%;
+    border: 0;
+    padding: 7px 14px;
+    text-align: center;
+    background-color:  rgba(255, 255, 255, 0.0);
+    cursor: pointer;
+}
+.Cart-Number{
+    display: inline-block;
+    padding: 3px 8px;
+    font-weight: bold;
+    text-align: initial;
+   ;
+}
+.Carrito-Vacio{
+  text-align:  center;
+
+}
+

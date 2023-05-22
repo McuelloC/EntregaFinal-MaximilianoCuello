@@ -99,6 +99,106 @@
         "Stock": 8,
         "keyFilter": "Pastas"
 
+    },
+    {
+        "id":11 ,
+        "title": "Vianda Diaria",
+        "description": "Vianda diaria, incluye Pollo o Carne - Con ensalada Variada",
+        "price": 1500 ,
+        "pictureURL":"https://firebasestorage.googleapis.com/v0/b/react-coderhouse-84503.appspot.com/o/ImageProduct%2FviandasProductos.jpg?alt=media&token=ecc7e4df-0b0d-4674-a1bb-1614337183f4",
+        "Stock": 30,
+        "keyFilter": "Viandas"
+
+    },
+    {
+        "id":12 ,
+        "title": "Viandas Programa Semanal",
+        "description": "Plan de Viandas Semanales incluye 7 comidas distintas, con guarnicion",
+        "price": 6000 ,
+        "pictureURL":"https://firebasestorage.googleapis.com/v0/b/react-coderhouse-84503.appspot.com/o/ImageProduct%2FviandasProductos.jpg?alt=media&token=ecc7e4df-0b0d-4674-a1bb-1614337183f4",
+        "Stock": 30,
+        "keyFilter": "Viandas"
+
+    },
+    {
+        "id":13 ,
+        "title": "Viandas Programa Quincenal",
+        "description": "Plan de Viandas Semanales incluye 14 comidas distintas, con guarnicion y postre de regalo ",
+        "price": 12000 ,
+        "pictureURL":"https://firebasestorage.googleapis.com/v0/b/react-coderhouse-84503.appspot.com/o/ImageProduct%2FviandasProductos.jpg?alt=media&token=ecc7e4df-0b0d-4674-a1bb-1614337183f4",
+        "Stock": 15,
+        "keyFilter": "Viandas"
+
+    },
+    {
+        "id":14 ,
+        "title": "Viandas Programa Mensual",
+        "description": "Plan de Viandas Semanales incluye 28 comidas distintas, con guarnicion y postre de regalo ",
+        "price": 23000 ,
+        "pictureURL":"https://firebasestorage.googleapis.com/v0/b/react-coderhouse-84503.appspot.com/o/ImageProduct%2FviandasProductos.jpg?alt=media&token=ecc7e4df-0b0d-4674-a1bb-1614337183f4",
+        "Stock": 15,
+        "keyFilter": "Viandas"
+
+    },
+    {
+        "id":15 ,
+        "title": "Catering  5 Personas",
+        "description": "Incluye 12 Sanwich de miga / 12 Empanadas de copetin / 12 Pizzetas de Muzza y Jamon / ",
+        "price": 5000 ,
+        "pictureURL":"https://firebasestorage.googleapis.com/v0/b/react-coderhouse-84503.appspot.com/o/ImageProduct%2FCatering.jpg?alt=media&token=414f831c-a92e-4eb5-9e08-168937301d4a",
+        "Stock": 15,
+        "keyFilter": "Catering"
+
+    },
+    {
+        "id":16 ,
+        "title": "Catering Premium  5 Personas",
+        "description": "Incluye 12 Brochetas / 12 Mini Sanwich de milanesa / 12 Empanadas de JYQ / 12 Empanadas de Carne",
+        "price": 7000 ,
+        "pictureURL":"https://firebasestorage.googleapis.com/v0/b/react-coderhouse-84503.appspot.com/o/ImageProduct%2FCatering.jpg?alt=media&token=414f831c-a92e-4eb5-9e08-168937301d4a",
+        "Stock": 15,
+        "keyFilter": "Catering"
+
+    },
+    {
+        "id":17 ,
+        "title": "Catering Premium  10 Personas",
+        "description": "Incluye 24 Brochetas / 24 Mini Sanwich de milanesa / 24 Empanadas de JYQ / 24 Empanadas de Carne",
+        "price": 13000 ,
+        "pictureURL":"https://firebasestorage.googleapis.com/v0/b/react-coderhouse-84503.appspot.com/o/ImageProduct%2FCatering.jpg?alt=media&token=414f831c-a92e-4eb5-9e08-168937301d4a",
+        "Stock": 9,
+        "keyFilter": "Catering"
+
+    },
+    {
+        "id":18 ,
+        "title": "Catering   10 Personas",
+        "description": "Incluye 24 Sanwich de miga / 24 Empanadas de copetin / 24 Pizzetas de Muzza y Jamon / ",
+        "price": 9000 ,
+        "pictureURL":"https://firebasestorage.googleapis.com/v0/b/react-coderhouse-84503.appspot.com/o/ImageProduct%2FCatering.jpg?alt=media&token=414f831c-a92e-4eb5-9e08-168937301d4a",
+        "Stock": 9,
+        "keyFilter": "Catering"
+
+    },
+    {
+        "id":19 ,
+        "title": "Catering Premium  20 Personas",
+        "description": "Incluye 48 Brochetas / 48 Mini Sanwich de milanesa / 48 Empanadas de JYQ / 48 Empanadas de Carne",
+        "price": 23000 ,
+        "pictureURL":"https://firebasestorage.googleapis.com/v0/b/react-coderhouse-84503.appspot.com/o/ImageProduct%2FCatering.jpg?alt=media&token=414f831c-a92e-4eb5-9e08-168937301d4a",
+        "Stock": 10,
+        "keyFilter": "Catering"
+
+    },
+    {
+        "id":20 ,
+        "title": "Catering   20 Personas",
+        "description": "Incluye 48 Sanwich de miga / 48 Empanadas de copetin / 48 Pizzetas de Muzza y Jamon / ",
+        "price": 17500 ,
+        "pictureURL":"https://firebasestorage.googleapis.com/v0/b/react-coderhouse-84503.appspot.com/o/ImageProduct%2FCatering.jpg?alt=media&token=414f831c-a92e-4eb5-9e08-168937301d4a",
+        "Stock": 5,
+        "keyFilter": "Catering"
+
     }
 
 ]

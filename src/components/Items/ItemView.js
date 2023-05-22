@@ -1,17 +1,26 @@
-import React, { useContext, } from 'react';
+import React, { useContext } from 'react';
 import { Card, Button, ListGroup } from 'react-bootstrap';
 import ItemCount from './ItemCount';
-import { DataContext } from "../../Context/DataContext";
+import { CartContext, DataContext, CountContext } from '../../Context/index';
 import { useNavigate } from 'react-router-dom';
 
 
+
+
 const ItemView = ({ filter }) => {
+  const { addToCart } = useContext(CartContext)
   const { data } = useContext(DataContext);
+  const { count } = useContext(CountContext)
+
+
   let filterData = data;
   const navigate = useNavigate();
-  const handlerClickurl=(id)=>{
+  const handlerClickurl = (id) => {
     navigate(`/productos/${id}`);
+
   }
+
+
 
   if (filter !== 'Todo') {
     filterData = data.filter(item => item.keyFilter.includes(filter));
@@ -35,14 +44,18 @@ const ItemView = ({ filter }) => {
           </ListGroup>
           <Card.Body>
             <Card.Text> Precio: ${item.price}</Card.Text>
-            <ItemCount stock={item.Stock} />
+            <ItemCount stock={item.Stock} id={item.id} />
             <br />
-            <Button>Agregar al Carrito</Button>
+            <Button
+              onClick={() => addToCart(item.title, count[item.id], item.id, item.price)}
+            >
+              Agregar al Carrito
+            </Button>
           </Card.Body>
-
         </Card>
 
       ))}
+
     </>
   );
 };

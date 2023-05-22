@@ -1,18 +1,24 @@
 import { Button } from "react-bootstrap";
-import { useCount } from "../../hooks/useCounter";
 import "./Items.css";
+import { CountContext } from "../../Context";
+import { useContext } from "react";
 
-function ItemCount({ stock }) {
-  const Cont = useCount();
+
+function ItemCount({ stock, id }) {
+  const { count, sumar, restar } = useContext(CountContext);
 
   return (
-    <div className="col-12">
-      <Button onClick={() => Cont.restar()}>-</Button>
-      <span>{Cont.count}</span>
+    <div className="col-111">
+      <Button onClick={() => restar(id)}>-</Button>
+      <input
+        type="text"
+        value={count[id] || 1}
+        className="Input-Count"
+      />
       <Button
-        onClick={() => Cont.sumar(stock)}
+        onClick={() => sumar(id)}
         className="btndisable"
-        disabled={Cont.count === stock}
+        disabled={count[id] === stock}
       >
         +
       </Button>

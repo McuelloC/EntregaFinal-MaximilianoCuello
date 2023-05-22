@@ -35,7 +35,7 @@ const Cards = () => {
       <Card style={cardStyle}>
         <Card.Img variant="top" src={catering} />
         <Card.Body>
-          <Card.Title>Cataring para Eventos</Card.Title>
+          <Card.Title>Catering para Eventos</Card.Title>
           <Card.Text>
             Hacemos catering para tus eventos, ¡contáctanos y disfruta de nuestra deliciosa comida en tu próxima celebración!{' '}
           </Card.Text>

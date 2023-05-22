@@ -14,7 +14,7 @@ const useCount = ()=>{
       }
     };
 
-    return {count,sumar,restar}
+    return {count,sumar,restar,setCount}
   
 }
 export {useCount}

@@ -6,8 +6,12 @@ import bgVideo from "./assets/Video/background-video.mp4";
 import { DataProvider, CartProvider,CountProvider } from "./Context/index"
 import { Contacto, Home, Productos, ProductDetail } from "./pages";
 import ViewCartItems from "./components/CartWidget/ViewCartItems";
+import { useState } from "react";
+
+
 
 function App() {
+  const [showCartModal, setShowCartModal] = useState(true);
   return (
     <>
       <DataProvider>
@@ -26,7 +30,7 @@ function App() {
                 <Route path="productos" element={<Productos />} />
                 <Route path="contact" element={<Contacto />} />
                 <Route path="/productos/:id" element={<ProductDetail />} />
-                <Route path="/cart" element={<ViewCartItems />} />
+                <Route path="/cart" element={<ViewCartItems show={showCartModal} onHide={() => setShowCartModal(false)} />} />
                 <Route path="/" element={<Home greeting="¡Bienvenidos a Bona Comida!" />} />
                 <Route element={<Home />} />
               </Route>

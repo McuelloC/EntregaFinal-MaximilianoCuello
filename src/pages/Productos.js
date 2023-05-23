@@ -2,20 +2,25 @@ import { Dropdown, DropdownButton } from "react-bootstrap";
 import ItemView from "../components/Items/ItemView";
 import { useState } from "react";
 
+
+
 const Productos = () => {
   const [filter, setFilter] = useState("Todo");
   const handleSelect = (value) => {
     setFilter(value);
   };
 
+
   return (
     <>
       <div className="container">
         <DropdownButton id="dropdown-basic-button" title="Categorias">
+
           <Dropdown.Item
+
             onClick={() => handleSelect("Todo")}
             className="List"
-            href="#/Todo"
+
           >
             Todo
           </Dropdown.Item>
@@ -23,6 +28,7 @@ const Productos = () => {
             onClick={() => handleSelect("Carne")}
             className="List"
             href="#/Carne"
+
           >
             Carnes
           </Dropdown.Item>
@@ -43,14 +49,14 @@ const Productos = () => {
           <Dropdown.Item
             onClick={() => handleSelect("Viandas")}
             className="List"
-            href="#/Pizzas"
+            href="#/Viandas"
           >
             Viandas
           </Dropdown.Item>
           <Dropdown.Item
             onClick={() => handleSelect("Catering")}
             className="List"
-            href="#/Pizzas"
+            href="#/Catering"
           >
             Catering
           </Dropdown.Item>
@@ -59,7 +65,7 @@ const Productos = () => {
       <div className="row">
         <ItemView filter={filter} />
       </div>
-     
+
     </>
   );
 };

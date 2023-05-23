@@ -1,20 +1,24 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import "./CartWidget.css";
-import { useContext, useState } from 'react';
-import ViewCartItems from './ViewCartItems';
+import { useContext } from 'react';
 import { CartContext } from '../../Context';
+import { useNavigate } from 'react-router-dom';
 
 
 
 const CarritoCompras = () => {
-  const [modalShow, setModalShow] = useState(false);
+
   const { cartList } = useContext(CartContext)
+  const navtocart = useNavigate();
   const CartQuantity = cartList.reduce((total, item) => total + (item.quantity === undefined ? 1 : item.quantity), 0);
+  const handlecartbtn = () => {
+    navtocart(`/cart`)
+  }
 
   return (
     <>
       <div className="carrito-compras">
-        <button className='Cart-Button' onClick={() => setModalShow(true)}>
+        <button className='Cart-Button' onClick={() => handlecartbtn()}>
 
           <i className="bi bi-cart2" style={{ fontSize: "2rem" }}></i>
           {cartList.length === 0 ? (
@@ -26,7 +30,7 @@ const CarritoCompras = () => {
         </button>
       </div>
       <div style={{ display: "block" }}>
-        <ViewCartItems show={modalShow} onHide={() => setModalShow(false)} />
+
       </div>
     </>
   );

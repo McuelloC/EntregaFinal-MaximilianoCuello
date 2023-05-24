@@ -1,29 +1,23 @@
 import React from "react";
 import Cards from "../components/Cards/Cards"
+import "./pages.css"
 
 
 const Home = ({ greeting }) => {
   return (
     <>
-      <div className="position-relative" style={{ marginTop: "20%" }}>
+     <div className="position-relative" id="DivGral-Home"  style={{ marginTop: "20%" }}>
         <div
-          className="col-6"
-          style={{
-            position: "relative",
-            zIndex: "1",
-            top: "50%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-          }}
+          className="col-4"
+          id="Div-Home"
+      
         >
-          <h1 className="text-center mb-4">{greeting}</h1>
+          <h1 className="text-center mb-4">{greeting}</h1></div>
+          
           <p
             className="text-center"
-            style={{
-              fontSize: "1.5em",
-              color: "white",
-              textShadow: "none",
-            }}
+            id="P-Home"
+           
           >
             La empresa dedicada a ofrecer los más deliciosos platos, utilizando
             ingredientes frescos y de la más alta calidad. Nuestra pasión por la
@@ -31,9 +25,9 @@ const Home = ({ greeting }) => {
             atención personalizada que ofrecemos a nuestros clientes. Con Bona
             Comida, disfrutará de una experiencia culinaria única y sabrosa.
           </p>
-        </div>
+         
       </div>
-      <div className="col-10 mx-auto" style={{ marginTop: "20%px" }}>
+      <div className="col-10 mx-auto" style={{ marginTop: "50%px" }}>
         <Cards />
         
       </div>

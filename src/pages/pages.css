@@ -1,0 +1,37 @@
+@media (max-width: 768px) {
+    #Div-Home {
+        position: absolute;
+        margin-right: 1px;
+        width: auto;
+        height: auto;
+        overflow: hidden;
+        
+    }
+
+  
+    
+}
+
+#Div-Home {
+    position: relative;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#P-Home {
+    font-size: 1.5em;
+    color: "white";
+    text-shadow: none;
+}
+#Div-P {
+    
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+  }
+
+  #DivGral-Home{
+    margin-bottom: 20%;
+  }

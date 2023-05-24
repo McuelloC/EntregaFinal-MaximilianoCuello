@@ -1,28 +1,26 @@
 import { DataContext } from './DataContext';
+import { collection, getDocs, getFirestore,orderBy } from "firebase/firestore";
+import React, { useState, useEffect } from 'react';
 
-import React, { useState, useEffect} from 'react';
-
-
-
-
-export  const DataProvider = ({ children }) => {
+export const DataProvider = ({ children }) => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(
-          "https://react-coderhouse-84503-default-rtdb.firebaseio.com/.json",
-          {
-            headers: {
-              "Access-Control-Allow-Origin": "https://react-coderhouse-84503.web.app",
-            },
-          }
-        );
-        const data = await response.json();
-        setData(data);
+        const db = getFirestore();
+        const itemCollection = collection(db, "products");
+        const querySnapshot = await getDocs(itemCollection, orderBy("id","desc"));
+
+        
+          const fetchedData = querySnapshot.docs.map((doc) => ({
+            id: doc.id,
+            ...doc.data()
+          }));
+          setData(fetchedData);
+        
       } catch (error) {
-        console.log(error);
+        console.log("Error fetching data:", error);
       }
     };
 
@@ -30,7 +28,6 @@ export  const DataProvider = ({ children }) => {
   }, []);
 
   return (
-    
     <DataContext.Provider value={{ data }}>
       {children}
     </DataContext.Provider>

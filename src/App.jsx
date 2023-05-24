@@ -21,6 +21,7 @@ function App() {
             <source src={bgVideo} type="video/mp4" />
           </video>
         </div>
+        <div>
         <BrowserRouter>
         <CountProvider>
           <CartProvider>
@@ -39,8 +40,9 @@ function App() {
           </CartProvider>
           </CountProvider>
         </BrowserRouter>
-
+        </div>
       </DataProvider>
+      
     </>
   );
 }

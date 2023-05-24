@@ -31,7 +31,7 @@ const ItemView = ({ filter }) => {
             <Card key={item.id} className='CardProduct'>
               <Card.Img variant="top" src={item.pictureURL} />
               <Card.Body>
-                <Card.Title>{item.title}</Card.Title>
+                <Card.Title className='CardTitle'>{item.title}</Card.Title>
               </Card.Body>
               <ListGroup className="list-group-flush">
                 <Button

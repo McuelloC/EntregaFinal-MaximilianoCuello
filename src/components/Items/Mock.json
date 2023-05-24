@@ -143,7 +143,7 @@
     {
         "id":15 ,
         "title": "Catering  5 Personas",
-        "description": "Incluye 12 Sanwich de miga / 12 Empanadas de copetin / 12 Pizzetas de Muzza y Jamon / ",
+        "description": "Incluye 12 Sanwich de miga / 12 Empanadas de copetin / 12 Pizzetas de Muzza y Jamon  ",
         "price": 5000 ,
         "pictureURL":"https://firebasestorage.googleapis.com/v0/b/react-coderhouse-84503.appspot.com/o/ImageProduct%2FCatering.jpg?alt=media&token=414f831c-a92e-4eb5-9e08-168937301d4a",
         "Stock": 15,

@@ -20,43 +20,37 @@ const Productos = () => {
 
             onClick={() => handleSelect("Todo")}
             className="List"
-
           >
             Todo
           </Dropdown.Item>
           <Dropdown.Item
             onClick={() => handleSelect("Carne")}
             className="List"
-            href="#/Carne"
-
           >
             Carnes
           </Dropdown.Item>
           <Dropdown.Item
             onClick={() => handleSelect("Pastas")}
             className="List"
-            href="#/Pastas"
           >
             Pastas
           </Dropdown.Item>
           <Dropdown.Item
             onClick={() => handleSelect("Pizza")}
             className="List"
-            href="#/Pizzas"
           >
             Pizzas
           </Dropdown.Item>
           <Dropdown.Item
             onClick={() => handleSelect("Viandas")}
             className="List"
-            href="#/Viandas"
           >
             Viandas
           </Dropdown.Item>
           <Dropdown.Item
             onClick={() => handleSelect("Catering")}
             className="List"
-            href="#/Catering"
+
           >
             Catering
           </Dropdown.Item>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar,  Nav} from 'react-bootstrap';
-import CarritoCompras from '../CartWidget/CarritoCompras';
+import CardWidget from '../CartWidget/CardWidget';
 import { Link, Outlet } from 'react-router-dom';
 
 
@@ -14,11 +14,11 @@ function NavBar() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-6">
               <Nav.Link as={Link} to="/">Home</Nav.Link>
-              <Nav.Link as={Link} to="/productos">Productos</Nav.Link>
+              <Nav.Link as={Link} to="/Productos">Productos</Nav.Link>
               <Nav.Link as={Link} to="/Contact">Contacto</Nav.Link>
               
             </Nav>
-            <CarritoCompras />
+            <CardWidget />
           </Navbar.Collapse>
        
       </Navbar>
@@ -29,4 +29,4 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+export {NavBar};

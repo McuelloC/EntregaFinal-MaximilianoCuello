@@ -1,21 +1,29 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Card, Button } from 'react-bootstrap';
 import { NavLink, Link, useParams } from 'react-router-dom';
-import { DataContext,CartContext,CountContext } from '../Context';
+import { DataContext, CartContext, CountContext } from '../Context';
 import ItemCount from '../components/Items/ItemCount';
-
+import { CategoryFilter } from '../components';
 
 function ProductDetail() {
   const { id } = useParams();
   const { data } = useContext(DataContext);
-  const {addToCart} = useContext(CartContext)
-  const {count} = useContext(CountContext)
+  const { addToCart } = useContext(CartContext);
+  const { count } = useContext(CountContext);
   const [filterData, setFilterData] = useState(null);
-
+  const categories = React.useMemo(() => ["Pizza", "Pastas", "Carne", "Viandas", "Catering"], []);
+  
   useEffect(() => {
-    const filteredItem = data.find(item => item.id === parseInt(id));
-    setFilterData(filteredItem);
-  }, [data, id]);
+   //eslint-disable-next-line 
+    if (categories.includes(id)) {
+      setFilterData(id);
+      
+    } else {
+      const filteredItem = data.find(item => item.id === parseInt(id));
+      setFilterData(filteredItem);
+    }
+  }, [data, id,categories]);
+ 
 
   const containerStyle = {
     display: 'flex',
@@ -38,7 +46,9 @@ function ProductDetail() {
     objectFit: 'cover',
   };
 
-  if (!filterData) {
+  if (typeof filterData === 'string') {
+    return <CategoryFilter category={filterData} />;
+  } else if (!filterData) {
     return (
       <div style={{
         display: 'flex',
@@ -50,7 +60,7 @@ function ProductDetail() {
       }}>
 
         <h1>El ID Indicado es incorrecto</h1>
-        <NavLink as={Link} to="/productos">
+        <NavLink as={Link} to="/Productos">
           <Button variant="primary" >Volver a Productos</Button>
         </NavLink>
       </div>
@@ -67,21 +77,18 @@ function ProductDetail() {
             <Card.Title>{filterData.title}</Card.Title>
             <Card.Text>{filterData.description}</Card.Text>
             <h3> Precio: ${filterData.price}</h3>
-            <ItemCount stock={filterData.Stock} id={filterData.id}/>
+            <ItemCount stock={filterData.Stock} id={filterData.id} />
             <hr />
             <Button onClick={() => addToCart(filterData.title, count[filterData.id], filterData.id, filterData.price)}
             > Agregar al Carrito</Button>
           </Card.Body>
           <Card.Footer>
-            <NavLink as={Link} to="/productos">
+            <NavLink as={Link} to="/Productos">
               <Button variant="primary">Volver a Productos</Button>
             </NavLink>
-
-
           </Card.Footer>
         </Card>
       </div>
-
     </>
   );
 }

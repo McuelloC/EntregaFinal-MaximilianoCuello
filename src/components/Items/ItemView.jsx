@@ -15,7 +15,7 @@ const ItemView = ({ filter }) => {
   let filterData = data;
   const navigate = useNavigate();
   const handlerClickurl = (id) => {
-    navigate(`/productos/${id}`);
+    navigate(`/Productos/${id}`);
 
   }
 

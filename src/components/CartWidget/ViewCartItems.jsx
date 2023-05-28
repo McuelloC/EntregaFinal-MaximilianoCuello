@@ -71,4 +71,4 @@ function ViewCartItems() {
   );
 }
 
-export default ViewCartItems;
+export  {ViewCartItems};

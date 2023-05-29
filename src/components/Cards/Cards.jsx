@@ -41,7 +41,7 @@ const Cards = () => {
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-          <NavLink as={Link} to="/Productos">
+          <NavLink as={Link} to="/Productos/Catering">
             <Button variant="primary">Market</Button>
           </NavLink>
         </Card.Footer>
@@ -55,7 +55,7 @@ const Cards = () => {
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-          <NavLink as={Link} to="/Productos">
+          <NavLink as={Link} to="/Productos/Viandas">
             <Button variant="primary">Market</Button>
           </NavLink>
         </Card.Footer>

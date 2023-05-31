@@ -12,7 +12,6 @@ const ItemView = ({ filter }) => {
   const { addToCart } = useContext(CartContext)
   const { data } = useContext(DataContext);
   const { count } = useContext(CountContext)
-
   let filterData = data;
   const navigate = useNavigate();
   const handlerClickurl = (id) => {
@@ -38,13 +37,13 @@ const ItemView = ({ filter }) => {
               <ListGroup className="list-group-flush">
                 <Button
                   variant="primary"
-                  onClick={() => handlerClickurl(item.id)}
+                  onClick={() => handlerClickurl(item.Firebaseid)}
                 >
                   Detalles
                 </Button>
               </ListGroup>
               <Card.Body>
-                <Card.Text> Precio: ${item.price}</Card.Text>
+                <Card.Text> Precio: ${item.price} {item.id}</Card.Text>
                 <ItemCount stock={item.Stock} id={item.id} />
                 <br />
                 <Button

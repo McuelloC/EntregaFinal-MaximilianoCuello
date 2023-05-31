@@ -10,17 +10,20 @@ export const DataProvider = ({ children }) => {
       try {
         const db = getFirestore();
         const itemCollection = collection(db, "products");
+       
         const querySnapshot = await getDocs(itemCollection, orderBy("id","desc"));
 
         
           const fetchedData = querySnapshot.docs.map((doc) => ({
-            id: doc.id,
+               Firebaseid: doc.id,
+               id: doc.data().id,
             ...doc.data()
           }));
           setData(fetchedData);
+          
         
       } catch (error) {
-        console.log("Error fetching data:", error);
+        console.log("Error en la conexion", error);
       }
     };
 

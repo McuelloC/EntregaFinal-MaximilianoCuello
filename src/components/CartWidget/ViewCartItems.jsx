@@ -4,7 +4,8 @@ import Button from 'react-bootstrap/Button';
 import Table from 'react-bootstrap/Table';
 import { CartContext } from '../../Context';
 import Cart2 from "../../assets/Imagenes/SadCart.png";
-import { NavLink, Link } from 'react-router-dom';
+import "./CartWidget.css"
+
 
 function ViewCartItems() {
   const { cartList, deleteItem, removeList, cartPrice } = useContext(CartContext);
@@ -61,12 +62,16 @@ function ViewCartItems() {
           </>
         )}
       </Modal.Body>
-      <Modal.Footer>
+     
+      <Modal.Footer className='Modal-Footer'>
+
+        <Button >Finalizar Compra</Button>
         <Button onClick={() => removeList()}>Vaciar Carrito</Button>
-        <NavLink as={Link} to="/Productos">
-          <Button>Cerrar</Button>
-        </NavLink>
+       
+       
+        
       </Modal.Footer>
+  
     </Modal>
   );
 }

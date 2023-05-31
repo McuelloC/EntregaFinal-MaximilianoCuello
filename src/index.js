@@ -14,6 +14,7 @@ const firebaseConfig = {
   appId: "1:358555655758:web:d077278428a68fa7aa6d1f"
 };
 
+
 root.render(
   <React.StrictMode>
     <App />

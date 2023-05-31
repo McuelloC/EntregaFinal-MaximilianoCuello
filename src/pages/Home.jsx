@@ -4,6 +4,7 @@ import "./pages.css"
 
 
 const Home = ({ greeting }) => {
+
   return (
     <>
      <div className="position-relative" id="DivGral-Home"  style={{ marginTop: "20%" }}>

@@ -5,11 +5,11 @@
         width: auto;
         height: auto;
         overflow: hidden;
-        
+
     }
 
-  
-    
+
+
 }
 
 #Div-Home {
@@ -25,13 +25,39 @@
     color: "white";
     text-shadow: none;
 }
-#Div-P {
-    
-    display: flex;
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
-  }
 
-  #DivGral-Home{
+#Div-P {
+
+    display: flex;
+    justify-content: center;
+    /* Centrar horizontalmente */
+    align-items: center;
+    /* Centrar verticalmente */
+}
+
+#DivGral-Home {
     margin-bottom: 20%;
-  }
+}
+
+#container-contacto {
+    border: 1px solid black;
+    width: 50%;
+        padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    background-color: aliceblue;
+    color: black;
+    text-shadow: none;
+}
+
+#menu {
+    padding-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+    #container-contacto {
+        width: 100%;
+        background-color: aliceblue
+    }
+}

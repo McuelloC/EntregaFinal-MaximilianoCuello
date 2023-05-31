@@ -3,6 +3,7 @@ import { Card, Button, ListGroup } from 'react-bootstrap';
 import ItemCount from './ItemCount';
 import { CartContext, DataContext, CountContext } from '../../Context/index';
 import { useNavigate } from 'react-router-dom';
+import {DropdownFilter} from './DropdownFilter';
 
 
 
@@ -25,6 +26,7 @@ const ItemView = ({ filter }) => {
 
   return (
     <>
+    <DropdownFilter/>
       <div className="container-Product">
         <div className='row '>
           {filterData.map(item => (

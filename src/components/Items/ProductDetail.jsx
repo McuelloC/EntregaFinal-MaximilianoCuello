@@ -1,9 +1,9 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Card, Button } from 'react-bootstrap';
 import { NavLink, Link, useParams } from 'react-router-dom';
-import { DataContext, CartContext, CountContext } from '../Context';
-import ItemCount from '../components/Items/ItemCount';
-import { CategoryFilter } from '../components';
+import { DataContext, CartContext, CountContext } from '../../Context';
+import ItemCount from './ItemCount';
+import { CategoryFilter } from '..';
 
 function ProductDetail() {
   const { id } = useParams();
@@ -14,12 +14,12 @@ function ProductDetail() {
   const categories = React.useMemo(() => ["Pizza", "Pastas", "Carne", "Viandas", "Catering"], []);
   
   useEffect(() => {
-   //eslint-disable-next-line 
+
     if (categories.includes(id)) {
       setFilterData(id);
       
     } else {
-      const filteredItem = data.find(item => item.id === parseInt(id));
+      const filteredItem = data.find(item => item.Firebaseid === id);
       setFilterData(filteredItem);
     }
   }, [data, id,categories]);

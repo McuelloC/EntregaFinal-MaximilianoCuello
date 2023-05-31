@@ -1,3 +1,5 @@
 export {NavBar} from "./Navbar/Navbar"
 export {ViewCartItems} from "./CartWidget/ViewCartItems"
 export {CategoryFilter} from "./Items/CategoryFilter"
+export {ProductDetail} from "./Items/ProductDetail"
+export {Brief} from "./Checkout/Brief"

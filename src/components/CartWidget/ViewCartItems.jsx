@@ -5,6 +5,7 @@ import Table from 'react-bootstrap/Table';
 import { CartContext } from '../../Context';
 import Cart2 from "../../assets/Imagenes/SadCart.png";
 import "./CartWidget.css"
+import {Link,useNavigate} from "react-router-dom"
 
 
 function ViewCartItems() {
@@ -16,6 +17,10 @@ function ViewCartItems() {
   const handleClose = () => {
     window.history.back();
   };
+  const gocheckout = useNavigate();
+  const handleBuyOrder=()=>{
+    gocheckout(`/checkout`)
+  }
 
   return (
     <Modal show onHide={handleClose} centered>
@@ -62,18 +67,21 @@ function ViewCartItems() {
           </>
         )}
       </Modal.Body>
-     
-      <Modal.Footer className='Modal-Footer'>
 
-        <Button >Finalizar Compra</Button>
-        <Button onClick={() => removeList()}>Vaciar Carrito</Button>
-       
-       
-        
+      <Modal.Footer className='Modal-Footer'>
+        {cartData.length === 0 ? (
+          <Button as={Link} to="/Productos"  style={{ display: 'flex', justifyContent: 'center' }}>Selecciona Algun Producto</Button>
+        ) : (
+          <>
+            <Button onClick={()=>handleBuyOrder()}>Finalizar Compra</Button>
+            <Button onClick={() => removeList()}>Vaciar Carrito</Button>
+          </>
+        )}
       </Modal.Footer>
-  
+
+
     </Modal>
   );
 }
 
-export  {ViewCartItems};
+export { ViewCartItems };

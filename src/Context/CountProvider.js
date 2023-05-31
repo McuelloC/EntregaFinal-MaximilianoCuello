@@ -14,12 +14,17 @@ export const CountProvider = ({ children }) => {
     }
   };
 
+  const resetCounters = () => {
+    setCount({});
+  };
+
   return (
     <CountContext.Provider
       value={{
         count,
         sumar,
-        restar
+        restar,
+        resetCounters
       }}
     >
       {children}

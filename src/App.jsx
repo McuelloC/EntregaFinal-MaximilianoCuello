@@ -1,10 +1,12 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { NavBar, ViewCartItems}from "./components/index";
+import { NavBar, ViewCartItems,ProductDetail,Brief}from "./components/index";
 import bgVideo from "./assets/Video/background-video.mp4";
 import { DataProvider, CartProvider, CountProvider } from "./Context/index";
-import { Contacto, Home, Productos, ProductDetail } from "./pages";
+import { Contacto, Home, Productos  } from "./pages";
+import { Checkout } from "./components/Checkout/Checkout";
+
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
                   <Route path="/" element={<NavBar />}>
                     <Route path="Productos" element={<Productos />} />
                     <Route path="contact" element={<Contacto />} />
+                    <Route path="/checkout" element={<Checkout />} />
+                    <Route path="/brief" element={<Brief />} />
                     <Route path="/Productos/:id" element={<ProductDetail />} />
                     <Route path="/cart" element={<ViewCartItems />} />
                     <Route path="/" element={<Home greeting="¡Bienvenidos a Bona Comida!" />} />

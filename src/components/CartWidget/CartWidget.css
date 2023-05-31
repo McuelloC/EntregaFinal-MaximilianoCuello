@@ -25,10 +25,9 @@
 }
 
 .Modal-Footer{
-  display: inline-block;
-  justify-content: center;
-  background-color: aqua;
-  margin-bottom: 20px;
   
+  display: flex;
+  justify-content: center;
+
 }
 

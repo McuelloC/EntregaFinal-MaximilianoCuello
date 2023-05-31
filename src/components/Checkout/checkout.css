@@ -1,0 +1,34 @@
+#container-checkout {
+    border: 1px solid black;
+    width: 50%;
+        padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    background-color: aliceblue;
+    color: black;
+    text-shadow: none;
+}
+
+#menu {
+    padding-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+    #container-checkout {
+        width: 100%;
+        background-color: aliceblue
+    }
+}
+
+.container-brief {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+  background-color: aliceblue;
+  text-shadow:none;
+  color: black;
+}

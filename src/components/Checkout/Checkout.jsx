@@ -30,7 +30,7 @@ export const Checkout = () => {
 
     if (user.nombre && user.apellido && user.email) {
       sendOrder(user);
-      toBrief(`/Brief`);
+      toBrief(`/checkout/Brief`);
     } else {
       alert("Por favor, complete todos los campos.");
     }

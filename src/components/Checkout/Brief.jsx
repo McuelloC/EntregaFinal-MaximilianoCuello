@@ -13,7 +13,7 @@ export const Brief = () => {
   const handleclick=()=>{
     removeList();
     resetCounters();
-    backtoproduct(`/Productos`);
+    backtoproduct(`/checkout/brief/payment`);
 
   }
   
@@ -46,7 +46,7 @@ export const Brief = () => {
           
           <h3> Numero de Orden: {orderid}</h3>
           </div>
-          <Button onClick={()=>handleclick()}>Finalizar</Button>
+          <Button onClick={()=>handleclick()}>Realizar Pago</Button>
           </div>
     </>
   );

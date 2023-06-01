@@ -6,6 +6,7 @@ import bgVideo from "./assets/Video/background-video.mp4";
 import { DataProvider, CartProvider, CountProvider } from "./Context/index";
 import { Contacto, Home, Productos  } from "./pages";
 import { Checkout } from "./components/Checkout/Checkout";
+import PaymentForm from "./components/Payments/PaymentForm";
 
 
 function App() {
@@ -26,9 +27,10 @@ function App() {
                     <Route path="Productos" element={<Productos />} />
                     <Route path="contact" element={<Contacto />} />
                     <Route path="/checkout" element={<Checkout />} />
-                    <Route path="/brief" element={<Brief />} />
+                    <Route path="/checkout/brief" element={<Brief />} />
                     <Route path="/Productos/:id" element={<ProductDetail />} />
                     <Route path="/cart" element={<ViewCartItems />} />
+                    <Route path="/checkout/brief/payment" element={<PaymentForm />} />
                     <Route path="/" element={<Home greeting="¡Bienvenidos a Bona Comida!" />} />
                     <Route element={<Home />} />
                   </Route>

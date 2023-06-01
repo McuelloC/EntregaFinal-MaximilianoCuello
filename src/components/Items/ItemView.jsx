@@ -43,7 +43,7 @@ const ItemView = ({ filter }) => {
                 </Button>
               </ListGroup>
               <Card.Body>
-                <Card.Text> <h4> Precio: ${item.price}</h4> </Card.Text>
+                 <h5> Precio: ${item.price}</h5> 
                 <ItemCount stock={item.Stock} id={item.id} />
                 <br />
                 <Button

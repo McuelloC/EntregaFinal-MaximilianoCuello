@@ -134,4 +134,4 @@ const PaymentForm = () => {
     )
 }
 
-export default PaymentForm;
+export  {PaymentForm}

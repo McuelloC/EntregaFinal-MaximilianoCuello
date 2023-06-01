@@ -17,7 +17,7 @@ function App() {
             <source src={bgVideo} type="video/mp4" />
           </video>
         </div>
-        <div>
+        <div className="contenedor-general">
           <BrowserRouter>
             <CountProvider>
               <CartProvider>

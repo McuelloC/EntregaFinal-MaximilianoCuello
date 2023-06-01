@@ -27,7 +27,7 @@ const ItemView = ({ filter }) => {
     <>
     <DropdownFilter/>
       <div className="container-Product">
-        <div className='row '>
+        <div className='container-cards'>
           {filterData.map(item => (
             <Card key={item.id} className='CardProduct'>
               <Card.Img variant="top" src={item.pictureURL} />

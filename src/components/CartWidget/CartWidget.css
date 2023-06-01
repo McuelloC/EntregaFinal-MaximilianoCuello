@@ -1,3 +1,13 @@
+@media (max-width: 767px){
+  .carrito-compras{
+    width: 130%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
 .carrito-compras{
     padding-right: 120px;
     background-color: transparent

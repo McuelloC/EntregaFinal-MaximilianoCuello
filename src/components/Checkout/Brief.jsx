@@ -20,7 +20,7 @@ export const Brief = () => {
 
   return (
     <>
-         <div className='container-brief' >
+         <div className='container' id='container-brief' >
          <h2>Gracias por Elegirnos {order.nombre} </h2>
           <Table>
             <thead>
@@ -35,13 +35,13 @@ export const Brief = () => {
               {cartList.map((item) => (
                 <tr key={item.id}>
                   <td>{item.item}</td>
-                  <td>{item.quantity}</td>
+                  {item.quantity===undefined ?(<td>1</td>):(<td>{item.quantity}</td>)}
                   <td>${item.price}</td>
                 </tr>
               ))}
             </tbody>
           </Table>
-          <div>
+          <div className="Footer-Brief" >
           <h3>Total: ${cartPrice}</h3>
           
           <h3> Numero de Orden: {orderid}</h3>

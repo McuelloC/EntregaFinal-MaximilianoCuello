@@ -1,34 +1,40 @@
-section{
-    color: white;
-    text-shadow: 3px 3px rgba(50,50,70,0.5);
-   
-    height: 100vh;
-}
-.navBg{
-    background-color: #87CEFA;
-    
-}
-.navbar-brand {
-    font-family: 'Love Light';
-    font-weight: bold;
-    font-size: 5.5rem;
-    color: white;
-  }
-  
-  .navbar-nav {
-    margin:  auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .navbar-nav a {
-    font-size: 1.2em;
-    color: white;
+section {
+  color: white;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+
+  height: 100vh;
 }
 
-.bonanav{
+.navBg {
+  background-color: #87CEFA;
+
+
+}
+
+.navbar-brand {
+  font-family: 'Love Light';
+  font-weight: bold;
+  font-size: 5.5rem;
+  color: white;
+}
+
+.navbar-nav {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-nav a {
+  font-size: 1.2em;
+  color: white;
+}
+
+
+.bonanav {
   padding-left: 50px;
 }
+
 .video-background {
   position: fixed;
   z-index: -1;
@@ -47,6 +53,8 @@ section{
   height: 100%;
   object-fit: cover;
 }
+
 .Card {
   margin: 10px;
 }
+

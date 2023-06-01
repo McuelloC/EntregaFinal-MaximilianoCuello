@@ -18,7 +18,9 @@ function NavBar() {
               <Nav.Link as={Link} to="/Contact">Contacto</Nav.Link>
               
             </Nav>
+            
             <CardWidget />
+            
           </Navbar.Collapse>
        
       </Navbar>

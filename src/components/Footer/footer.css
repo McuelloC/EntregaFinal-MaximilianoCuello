@@ -1,80 +1,55 @@
-body {
-    position: relative;
-    min-height: 210vh;
-  }
-  
-  main {
-    margin-bottom:200px; /* Ajusta el valor según sea necesario para evitar la superposición */
-  }
-  
-  footer {
-    color: aliceblue;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 120px; /* Ajusta la altura del footer según sea necesario */
-    background-color: rgba(48, 47, 47, 0.8);
-    padding: 20px;
-  }
-  footer {
-    color: aliceblue;
-    width: 100%;
-    height: 120px;
-    background-color: rgba(48, 47, 47, 0.8);
-    padding: 20px;
-  }
-  
-  .Container-Footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .footer-title {
-    font-family: "Love Light", sans-serif;
-    font-size: 60px;
-  }
-  
-  .footer-links {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .footer-links li {
-    margin-right: 10px;
-  }
-  
-  .footer-links a {
-    color: aliceblue;
-    text-decoration: none;
-    font-size: 1.2rem;
-  }
-  
-  .footer-text {
-    font-size: 5px;
-  }
 
-  #github{
-    font-size: 3rem
-  }
-  #linkedin{
-    font-size: 3rem
-  }
-  #footer-image {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  #footer-image li {
-    margin-right: 100px; /* Ajusta el valor según sea necesario */
-  }
 
-  @media (max-width: 768px){
-    .Container-Footer{
-        display: none;
-        background:transparent
-    }
+main {
+  margin-bottom: 200px; 
+}
+
+footer {
+  display: flex;
+  color: aliceblue;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-top: 200px;
+  width: 100%;
+  height: 120px;
+  background-color: rgba(48, 47, 47, 0.8);
+  padding: 20px;
+}
+
+
+
+.footer-title {
+  font-family: "Love Light", sans-serif;
+  font-size: 60px;
+}
+
+.footer-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-right: 10px;
+}
+
+.footer-links a {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 1.5rem;
+
+}
+
+#footer-image a{
+  font-size: 2.5rem;
+  margin-left: 100px;
+}
+
+@media (max-width: 768px) {
+  footer {
+    background-color: rgba(48, 47, 47, 0.0);
+    display: none;
   }
-  
+}

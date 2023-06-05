@@ -11,9 +11,9 @@ import { Link } from 'react-router-dom';
 const Cards = () => {
   const cardStyle = {
     margin: "30px",
-    backgroundColor: "rgba(255, 255, 255, 0.2)", 
+    backgroundColor: "rgba(255, 255, 255, 0.2)",
     textAlign: "center",
-    textShadow: "none" 
+    textShadow: "none"
   };
 
   return (

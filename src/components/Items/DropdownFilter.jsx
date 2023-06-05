@@ -1,11 +1,11 @@
 import React from 'react'
 import { Dropdown, DropdownButton } from "react-bootstrap";
-import {Link,useNavigate} from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
- const DropdownFilter = () => {
+const DropdownFilter = () => {
     const navigate = useNavigate();
     const handleSelect = (value) => {
-       navigate(`/Productos/${value}`);
+        navigate(`/Productos/${value}`);
     };
     return (
         <div className="container">
@@ -55,4 +55,4 @@ import {Link,useNavigate} from "react-router-dom";
     )
 }
 
-export  {DropdownFilter}
+export { DropdownFilter }

@@ -7,7 +7,7 @@ import { useContext } from "react";
 function ItemCount({ stock, id }) {
   const { count, sumar, restar } = useContext(CountContext);
 
- 
+
 
 
 
@@ -18,7 +18,7 @@ function ItemCount({ stock, id }) {
         type="text"
         value={count[id] || 1}
         className="Input-Count"
-        onChange={() => {}}
+        onChange={() => { }}
       />
       <Button
         onClick={() => sumar(id)}

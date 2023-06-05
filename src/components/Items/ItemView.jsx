@@ -3,7 +3,7 @@ import { Card, Button, ListGroup } from 'react-bootstrap';
 import ItemCount from './ItemCount';
 import { CartContext, DataContext, CountContext } from '../../Context/index';
 import { useNavigate } from 'react-router-dom';
-import {DropdownFilter} from './DropdownFilter';
+import { DropdownFilter } from './DropdownFilter';
 
 
 
@@ -25,7 +25,7 @@ const ItemView = ({ filter }) => {
 
   return (
     <>
-    <DropdownFilter/>
+      <DropdownFilter />
       <div className="container-Product">
         <div className='container-cards'>
           {filterData.map(item => (
@@ -43,7 +43,7 @@ const ItemView = ({ filter }) => {
                 </Button>
               </ListGroup>
               <Card.Body>
-                 <h5> Precio: ${item.price}</h5> 
+                <h5> Precio: ${item.price}</h5>
                 <ItemCount stock={item.Stock} id={item.id} />
                 <br />
                 <Button

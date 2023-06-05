@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Button } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
+
 
 const Contacto = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -7,6 +9,7 @@ const Contacto = () => {
   const [apellido, setApellido] = useState("");
   const [email, setEmail] = useState("");
   const [consulta, setConsulta] = useState("");
+  const toHome = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -27,6 +30,10 @@ const Contacto = () => {
     setConsulta("");
   };
 
+  const handleCompleteForm = () => {
+    alert("Su Consulta fue enviada! En breve recibira una respuesta. !Gracias!")
+    toHome("/")
+  }
   return (
     <>
       <div className="container" id="container-contacto">
@@ -82,12 +89,15 @@ const Contacto = () => {
             onChange={(e) => setConsulta(e.target.value)}
             required
           ></textarea>
+
         </div>
         <Button type="submit" onClick={handleSubmit}>
           Enviar
         </Button>
       </div>
-      {formSubmitted && <p>¡Tu consulta ha sido enviada!</p>}
+
+      {formSubmitted && handleCompleteForm()}
+
     </>
   );
 };

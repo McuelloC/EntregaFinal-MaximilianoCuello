@@ -12,18 +12,18 @@ function ProductDetail() {
   const { count } = useContext(CountContext);
   const [filterData, setFilterData] = useState(null);
   const categories = React.useMemo(() => ["Pizza", "Pastas", "Carne", "Viandas", "Catering"], []);
-  
+
   useEffect(() => {
 
     if (categories.includes(id)) {
       setFilterData(id);
-      
+
     } else {
       const filteredItem = data.find(item => item.Firebaseid === id);
       setFilterData(filteredItem);
     }
-  }, [data, id,categories]);
- 
+  }, [data, id, categories]);
+
 
   const containerStyle = {
     display: 'flex',

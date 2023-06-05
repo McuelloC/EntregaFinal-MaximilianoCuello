@@ -1,5 +1,5 @@
-@media (max-width: 767px){
-  .carrito-compras{
+@media (max-width: 767px) {
+  .carrito-compras {
     width: 130%;
     align-items: center;
     display: flex;
@@ -8,36 +8,37 @@
 }
 
 
-.carrito-compras{
-    padding-right: 120px;
-    background-color: transparent
-    
-  }
-.Cart-Button{
-    display: inline-block;
-    border-radius: 50%;
-    border: 0;
-    padding: 7px 14px;
-    text-align: center;
-    background-color:  rgba(255, 255, 255, 0.0);
-    cursor: pointer;
+.carrito-compras {
+  padding-right: 120px;
+  background-color: transparent
 }
-.Cart-Number{
-    display: inline-block;
-    padding: 3px 8px;
-    font-weight: bold;
-    text-align: initial;
-   ;
+
+.Cart-Button {
+  display: inline-block;
+  border-radius: 50%;
+  border: 0;
+  padding: 7px 14px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.0);
+  cursor: pointer;
 }
-.Carrito-Vacio{
-  text-align:  center;
+
+.Cart-Number {
+  display: inline-block;
+  padding: 3px 8px;
+  font-weight: bold;
+  text-align: initial;
+  ;
+}
+
+.Carrito-Vacio {
+  text-align: center;
 
 }
 
-.Modal-Footer{
-  
+.Modal-Footer {
+
   display: flex;
   justify-content: center;
 
 }
-

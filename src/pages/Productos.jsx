@@ -1,5 +1,6 @@
 
 import ItemView from "../components/Items/ItemView";
+import { Footer } from "../components";
 
 
 
@@ -12,11 +13,11 @@ const Productos = () => {
 
   return (
     <>
-     
-      <div className="row">
-        <ItemView filter={defaultitems}/>
-      </div>
 
+      <div className="row">
+        <ItemView filter={defaultitems} />
+      </div>
+      <Footer />
     </>
   );
 };

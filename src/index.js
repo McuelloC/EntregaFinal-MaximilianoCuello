@@ -6,12 +6,12 @@ import { initializeApp } from "firebase/app";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const firebaseConfig = {
-  apiKey: "AIzaSyBfjIcEO0BWwJAUNusPH06WOo47Yo4H8ew",
-  authDomain: "react-coderhouse-mcuello.firebaseapp.com",
-  projectId: "react-coderhouse-mcuello",
-  storageBucket: "react-coderhouse-mcuello.appspot.com",
-  messagingSenderId: "358555655758",
-  appId: "1:358555655758:web:d077278428a68fa7aa6d1f"
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSASING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID
 };
 
 

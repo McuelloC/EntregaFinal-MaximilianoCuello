@@ -70,4 +70,11 @@ body {
   #footer-image li {
     margin-right: 100px; /* Ajusta el valor según sea necesario */
   }
+
+  @media (max-width: 768px){
+    .Container-Footer{
+        display: none;
+        background:transparent
+    }
+  }
   

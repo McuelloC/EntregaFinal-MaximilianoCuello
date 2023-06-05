@@ -4,27 +4,28 @@ import "./checkout.css"
 import { DataContext } from '../../Context';
 import { useNavigate } from 'react-router-dom';
 
-
-
 export const Checkout = () => {
-  const { sendOrder } = useContext(DataContext)
+  const { sendOrder } = useContext(DataContext);
   const [user, setUser] = useState({
     nombre: "",
     apellido: "",
-    email: ""
+    email: "",
+    confirmEmail: ""
   });
   const toBrief = useNavigate();
 
-
   const handleSubmit = (e) => {
     e.preventDefault();
-
-
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (!emailRegex.test(user.email)) {
       alert("Por favor, ingrese un correo electrónico válido.");
+      return;
+    }
+
+    if (user.email !== user.confirmEmail) {
+      alert("Las direcciones de correo electrónico no coinciden.");
       return;
     }
 
@@ -34,9 +35,7 @@ export const Checkout = () => {
     } else {
       alert("Por favor, complete todos los campos.");
     }
-
   };
-
 
   return (
     <>
@@ -81,13 +80,25 @@ export const Checkout = () => {
             required
           />
         </div>
+        <div className="mb-3">
+          <label htmlFor="confirmEmail" className="form-label">
+            Reingrese Direccion de Email
+          </label>
+          <input
+            type="email"
+            className="form-control"
+            id="confirmEmail"
+            placeholder="nombre@ejemplo.com.ar"
+            value={user.confirmEmail}
+            onChange={(e) => setUser(prevState => ({ ...prevState, confirmEmail: e.target.value }))}
+            required
+          />
+        </div>
 
         <Button type="submit" onClick={handleSubmit}>
           Enviar
         </Button>
       </div>
-
-
     </>
   );
 };
